@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/iamvince24/vincewebsite.github.io/static/css/main.e574634a.css",
+    "main.js": "/iamvince24/vincewebsite.github.io/static/js/main.103f2888.js",
+    "index.html": "/iamvince24/vincewebsite.github.io/index.html",
+    "main.e574634a.css.map": "/iamvince24/vincewebsite.github.io/static/css/main.e574634a.css.map",
+    "main.103f2888.js.map": "/iamvince24/vincewebsite.github.io/static/js/main.103f2888.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e574634a.css",
+    "static/js/main.103f2888.js"
+  ]
+}

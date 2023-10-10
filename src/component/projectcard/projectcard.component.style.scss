@@ -1,95 +1,115 @@
 .projectCard {
-    height: auto;
+  height: 350px;
+  border-radius: 15px;
+  border: 1px solid black;
+  margin: 10px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .projectCardImg {
     border-radius: 15px;
-    border: 1px solid black;
     margin: 10px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 20px;
+    object-fit: cover;
+    width: auto;
+    height: 95%;
+    // border: 1px solid gray;
+  }
 
-    .projectCardImg {
-        background-color: aquamarine;
-        // width: 400px;
-        border-radius: 15px;
-        margin: 10px;
-        // border: 1px solid rgb(39, 225, 39);
+  .projectCardContent {
+    border-radius: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    // align-items: space;
+    width: auto;
+    height: 100%;
+
+    // border: 1px solid rgb(179, 27, 27);
+    // height: 100%;
+
+    .projectCardName {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin: 10px;
+      padding: 10px;
+      align-self: flex-start;
+      margin-bottom: auto;
+      text-decoration: none;
+
+      // border: 1px solid rgb(179, 27, 27);
     }
 
-    .projectCardContent{
-        border-radius: 15px;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        // border: 1px solid rgb(179, 27, 27);
-        // height: 100%;
-
-        .projectCardName {
-            font-size: 1.75rem;
-            font-weight: 600;
-            margin: 10px;
-            padding: 10px;
-            align-self: flex-start;
-            margin-bottom: auto;
-            text-decoration: none;
-
-            // border: 1px solid rgb(179, 27, 27);
-        }
-
-        .projectCardIntroduciton {
-            margin: 0px 20px 30px 20px;
-            font-size: 1.2rem;
-            font-weight: 400;
-            color: rgb(112, 112, 112);
-            line-height: 30px;
-        }
-        
-        .tagContainer {
-            margin: 20px;
-            margin-top: auto;
-            height: auto;
-            // padding: 10px;
-            // display: block;
-            // border: 1px solid black;
-    
-            .tagName {
-                font-size: 1rem;
-                height: 25px;
-                text-align: center;
-                padding: 4px;
-                border-radius: 10px;
-                margin-right: 20px;
-                margin-left: 10px;
-                margin-top: 10px;
-                padding-top: 10px;
-                position: relative;
-                display: inline-block;
-            }
-    
-            .tagName::after {
-                content: "";
-                position: absolute;
-                bottom: 0; 
-                left: -10px;
-                width: calc(100% + 10px);
-                height: 100%; 
-                padding-right: 7px;
-                border: 1px solid black;
-                border-radius: 10px;
-                margin-right: 10px;
-            }
-    
-        }
-
+    .projectCardLinksList {
+      margin: 0px 20px 30px 20px;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: rgb(112, 112, 112);
+      line-height: 30px;
     }
 
-    
+    .projectCardLinks {
+      text-decoration: none;
+      color: rgb(112, 112, 112);
+    }
+
+    .projectCardLinks:hover {
+      text-decoration: underline;
+    }
+
+    .projectCardIntroduciton {
+      margin: 0px 20px 30px 20px;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: rgb(112, 112, 112);
+      line-height: 30px;
+    }
+
+    .tagContainer {
+      margin: 20px;
+      margin-top: auto;
+      height: auto;
+      // padding: 10px;
+      // display: block;
+      // border: 1px solid black;
+
+      .tagName {
+        font-size: 1rem;
+        height: 25px;
+        text-align: center;
+        padding: 4px;
+        border-radius: 10px;
+        margin-right: 20px;
+        margin-left: 10px;
+        margin-top: 10px;
+        padding-top: 10px;
+        position: relative;
+        display: inline-block;
+      }
+
+      .tagName::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -10px;
+        width: calc(100% + 10px);
+        height: 100%;
+        padding-right: 7px;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
 }
 
 .articleCard:last-child {
-    margin-right: 0;
-}    
+  margin-right: 0;
+}
 
 .articleLink {
-    color: #000000;
-    text-decoration: none;
+  color: #000000;
+  text-decoration: none;
 }

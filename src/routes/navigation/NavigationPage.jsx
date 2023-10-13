@@ -1,25 +1,24 @@
 import React from "react";
-
 import { Fragment } from "react";
 import { Outlet, Link } from "react-router-dom";
 
-function NavigationBar() {
+function Navigation() {
   return (
     <Fragment>
-      <div class="navigation">
+      <div class="Navigation">
         <Link class="logo" to="/">
           Home
         </Link>
-        <div class="navigationList">
+        <div class="NavigationList">
           <a
-            class="navigationItem"
+            class="NavigationItem"
             href="https://zenn.dev/mynameisvince"
             target="_blank"
             rel="noreferrer"
           >
             Blog
           </a>
-          <Link class="navigationItem" to="/project">
+          <Link class="NavigationItem" to="/project">
             Project
           </Link>
         </div>
@@ -31,4 +30,4 @@ function NavigationBar() {
   );
 }
 
-export default NavigationBar;
+export default Navigation;

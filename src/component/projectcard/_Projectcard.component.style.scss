@@ -9,12 +9,11 @@
   align-items: center;
 
   .projectCardImg {
-    border-radius: 15px;
     margin: 10px;
+    margin-right: 20px;
     object-fit: cover;
     width: auto;
-    height: 95%;
-    // border: 1px solid gray;
+    height: 90%;
   }
 
   .projectCardContent {

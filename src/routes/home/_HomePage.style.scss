@@ -1,0 +1,23 @@
+@import "../../media";
+
+.HomePage {
+  background-color: aquamarine;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  margin: 10px 30px;
+  border-radius: 15px;
+
+  .HomePageTitle {
+    font-size: 4rem;
+    font-weight: 800;
+    padding-right: 100px;
+  }
+
+  .HomePageIntroduction {
+    font-size: 1rem;
+    width: 800px;
+    line-height: 35px;
+  }
+}

@@ -1,16 +1,16 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 function Home() {
   return (
-    <div>
+    <Fragment>
       <main>
-        <section class="mainSection">
-          <div class="mainTitle">
+        <section class="HomePage">
+          <div class="HomePageTitle">
             Hi ! Everyone,
             <br />
             My Name is Vince.
           </div>
-          <div class="introduction">
+          <div class="HomePageIntroduction">
             目前正在尋找前端工程師職位的機會。
             <br />
             作為一名擁有兩年平面設計經驗的設計師，我擅長透過溝通需求，設計出具有美感且注重體驗的視覺。然而，為了做出讓更多人使用的產品，決定轉職軟體產業。而因為學習的熱忱與對該領域的興趣，所以選擇攻讀研究所，以快速地瞭解該領域的基礎學科。
@@ -21,7 +21,7 @@ function Home() {
           </div>
         </section>
       </main>
-    </div>
+    </Fragment>
   );
 }
 

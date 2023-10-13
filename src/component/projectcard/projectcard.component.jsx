@@ -1,7 +1,5 @@
 import React from "react";
 
-import "./projectcard.component.style.scss";
-
 function ProjectCard({
   projectCardName,
   tagName,

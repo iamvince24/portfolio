@@ -1,6 +1,7 @@
 import React from "react";
 
 import Bar from "../../component/bar/Bar.component";
+import ProjectCard from "../../component/projectcard/Projectcard.component";
 import ReReProjectPicture from "../../assets/img/ReRe.Project.Picture.png";
 
 function Project() {

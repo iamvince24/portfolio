@@ -1,7 +1,7 @@
 import React from "react";
 
 import Bar from "../../component/bar/Bar.component";
-import ProjectCard from "../../component/projectcard/Projectcard.component";
+import ProjectCard from "../../component/projectcard/projectcard.component";
 import ReReProjectPicture from "../../assets/img/ReRe.Project.Picture.png";
 
 function Project() {
@@ -10,14 +10,7 @@ function Project() {
       <Bar barName={"Project"} BarClassNameList={[]} />
       <ProjectCard
         projectCardName={"視覺化學習過程的筆記應用程式 ｜ Re-Re"}
-        tagName={[
-          "React",
-          "React Router",
-          "Redux",
-          "Tailwind CSS",
-          "Firebase",
-          "Javascript",
-        ]}
+        tagName={["React", "React Router", "Redux", "Tailwind CSS", "Firebase"]}
         introduciton={
           "Re-Re 是一款可以用來記錄以及回顧學習過程的筆記應用程式。除了支援 Markdown 格式編輯筆記，筆記還具備了視覺化的甘特圖時間軸功能，讓使用者可以更好地了解自己的學習過程。"
         }

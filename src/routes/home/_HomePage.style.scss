@@ -1,96 +1,86 @@
 @import "../../media";
 
 .HomePage {
-  background-color: aquamarine;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  height: auto;
-  margin: 10px 30px;
-  border-radius: 15px;
+  height: 100vh;
 
-  @include mobile {
-    flex-direction: column;
-    margin-bottom: 50vh;
-    padding: 15px;
-    margin: 10px 24px;
-  }
-
-  .HomePageContent {
+  .HomePageVision {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    margin-top: 125px;
+    padding: 117px 0px 117px 50px;
 
-    @include tablet {
-      justify-content: start;
+    .HomePageCard1,
+    .HomePageCard2 {
+      position: absolute;
+      font-family: "Gilda Display", serif;
+
+      width: 940px;
+      height: 340px;
+
+      margin: auto;
+
+      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+
+      background-image: url("../../assets/img/Frame\ 15.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+
+      filter: brightness(0.65);
+
+      .HomePageCardTitle {
+        width: 100%;
+        height: 50%;
+        padding: 15px;
+        display: flex;
+
+        .HomePageCardTitleLine {
+          width: 3px;
+          height: 148px;
+          background-color: #b1b1b1;
+        }
+
+        .HomePageCardTitleText {
+          display: flex;
+          flex-direction: column;
+
+          margin-left: 20px;
+
+          .HomePageCardTitleHello {
+            color: #b1b1b1;
+            font-size: 48px;
+            font-weight: 400;
+            letter-spacing: -1.44px;
+          }
+
+          .HomePageCardTitleName {
+            color: #b1b1b1;
+            font-size: 96px;
+            font-weight: 400;
+            letter-spacing: -4.8px;
+          }
+        }
+      }
+
+      .HomePageCardContext {
+        margin-left: 35px;
+        color: #b1b1b1;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: -1.2px;
+      }
     }
 
-    @include mobile {
-      justify-content: start;
-    }
-  }
-
-  .HomePageTitle {
-    font-size: 4rem;
-    font-weight: 800;
-    padding-right: 100px;
-
-    @include tablet {
-      font-size: 3rem;
-      padding-right: 0vh;
+    .HomePageCard1 {
+      z-index: 2;
     }
 
-    @include mobile {
-      font-size: 2.5rem;
-      padding-right: 0vh;
-      margin-bottom: 1vh;
-    }
-  }
-
-  .HomePageContext {
-    font-size: 1rem;
-    margin-top: 15px;
-
-    @include tablet {
-      margin-top: 10px;
-    }
-
-    @include mobile {
-      display: none;
-    }
-  }
-
-  .HomePageContextMobile {
-    font-size: 1rem;
-
-    @include desktop {
-      display: none;
-    }
-
-    @include tablet {
-      display: none;
-    }
-
-    @include mobile {
-      margin: 10px 0px;
-    }
-  }
-
-  .HomePageIntroduction {
-    font-size: 0.9rem;
-    width: 50%;
-    line-height: 30px;
-
-    @include tablet {
-      font-size: 0.8rem;
-      width: 50%;
-      line-height: 25px;
-    }
-
-    @include mobile {
-      font-size: 0.8rem;
-      width: auto;
-      line-height: 22px;
+    .HomePageCard2 {
+      transform: rotate(15deg);
+      transform-origin: center;
     }
   }
 }

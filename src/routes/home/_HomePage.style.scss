@@ -7,23 +7,22 @@
     display: flex;
     justify-content: center;
     height: auto;
-    width: auto;
-    margin-top: 125px;
-    padding: 117px 0px 117px 50px;
+    width: 100vw;
+    margin-top: 14vw;
 
     .HomePageCard1,
     .HomePageCard2 {
       position: absolute;
       font-family: "Gilda Display", serif;
 
-      width: 940px;
-      height: 340px;
+      width: 78%;
+      max-width: 1600px;
+      max-height: 578px;
+      aspect-ratio: 47 / 17;
 
-      margin: auto;
+      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
 
-      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
-
-      background-image: url("../../assets/img/Frame\ 15.png");
+      background-image: url("../../assets/img/homepage.backgroundPic.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
@@ -31,14 +30,12 @@
       filter: brightness(0.65);
 
       .HomePageCardTitle {
-        width: 100%;
-        height: 50%;
         padding: 15px;
         display: flex;
 
         .HomePageCardTitleLine {
-          width: 3px;
-          height: 148px;
+          width: min(max(0.25vw, 16px), 4px);
+          height: min(max(12.25vw, 16px), 240px);
           background-color: #b1b1b1;
         }
 
@@ -50,14 +47,18 @@
 
           .HomePageCardTitleHello {
             color: #b1b1b1;
-            font-size: 48px;
+            // font-size: 48px;
+            // font-size: 3.4vw;
+            font-size: min(max(3.4vw, 16px), 70px);
             font-weight: 400;
             letter-spacing: -1.44px;
           }
 
           .HomePageCardTitleName {
             color: #b1b1b1;
-            font-size: 96px;
+            // font-size: 96px;
+            // font-size: 8vw;
+            font-size: min(max(8vw, 16px), 160px);
             font-weight: 400;
             letter-spacing: -4.8px;
           }
@@ -67,9 +68,13 @@
       .HomePageCardContext {
         margin-left: 35px;
         color: #b1b1b1;
-        font-size: 40px;
+        // font-size: 40px;
+        // font-size: 3.4vw;
+        font-size: min(max(3.4vw, 16px), 70px);
         font-weight: 400;
-        line-height: 60px;
+        // line-height: 60px;
+        // line-height: 5vw;
+        line-height: min(max(5vw, 16px), 100px);
         letter-spacing: -1.2px;
       }
     }

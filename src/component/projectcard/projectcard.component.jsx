@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 function ProjectCard({
   projectCardName,
   tagName,
-  introduciton,
+  introduction,
   img,
   Demo,
   Github,
@@ -16,35 +16,38 @@ function ProjectCard({
   ));
 
   return (
-    <div className="projectCard" key={projectCardName}>
-      <div className="projectCardContent">
-        <div className="">
-          <div className="projectCardName">{projectCardName}</div>
-          <div className="projectCardLinksList">
-            <a
-              href={Demo}
-              target="_blank"
-              rel="noreferrer"
-              className="projectCardLinks"
-            >
-              Demo |&nbsp;
-            </a>
-
-            <a
-              href={Github}
-              target="_blank"
-              rel="noreferrer"
-              className="projectCardLinks"
-            >
-              Github
-            </a>
+    <Fragment>
+      <div className="Project">
+        <div className="projectCard" key={projectCardName}>
+          <img src={img} className="projectCardImg" alt="projectCardImg" />
+          <div className="projectCardContent">
+            <div className="projectCardName">{projectCardName}</div>
+            <div className="projectCardLinksList">
+              <a
+                href={Demo}
+                target="_blank"
+                rel="noreferrer"
+                className="projectCardLinks"
+              >
+                Demo
+              </a>
+              <span>&nbsp;|&nbsp;</span>
+              <a
+                href={Github}
+                target="_blank"
+                rel="noreferrer"
+                className="projectCardLinks"
+              >
+                Github
+              </a>
+            </div>
             <div className="tagContainer">{item}</div>
+            <p className="projectCardIntroduciton">{introduction}</p>
           </div>
-          <p className="projectCardIntroduciton">{introduciton}</p>
         </div>
+        <div className="projectCardUnderline"></div>
       </div>
-      <img src={img} className="projectCardImg" alt="projectCardImg" />
-    </div>
+    </Fragment>
   );
 }
 

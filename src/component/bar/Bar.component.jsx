@@ -1,16 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
 
-function Bar({ barName, BarClassNameList }) {
-  //   const barClassArray = barClassName;
-  const BarClassElementList = BarClassNameList.map((name) => (
-    <div className="BarMenuName">{name}</div>
-  ));
-
+function Bar({ BarName }) {
   return (
-    <div className="Bar">
-      <div className="BarTitle">{barName}</div>
-      <div className="BarMenu">{BarClassElementList}</div>
-    </div>
+    <Fragment>
+      <div className="Bar">
+        <div className="BarTitle">{BarName}</div>
+        <div className="BarTitleLine"></div>
+      </div>
+    </Fragment>
   );
 }
 

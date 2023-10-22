@@ -5,20 +5,20 @@ import { Outlet, Link } from "react-router-dom";
 function Navigation() {
   return (
     <Fragment>
-      <div class="Navigation">
-        <Link class="logo" to="/">
+      <div className="Navigation">
+        <Link className="logo" to="/">
           My Name is Vince
         </Link>
-        <div class="NavigationList">
+        <div className="NavigationList">
           <a
-            class="NavigationItem"
+            className="NavigationItem"
             href="https://zenn.dev/mynameisvince"
             target="_blank"
             rel="noreferrer"
           >
             Blog
           </a>
-          <Link class="NavigationItem" to="/project">
+          <Link className="NavigationItem" to="/project">
             Project
           </Link>
         </div>

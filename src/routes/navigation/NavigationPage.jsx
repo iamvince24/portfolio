@@ -7,7 +7,7 @@ function Navigation() {
     <Fragment>
       <div class="Navigation">
         <Link class="logo" to="/">
-          Home
+          My Name is Vince
         </Link>
         <div class="NavigationList">
           <a

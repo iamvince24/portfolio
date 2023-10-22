@@ -10,6 +10,10 @@
     width: 100vw;
     margin-top: 14vw;
 
+    @include mobile {
+      margin-top: min(max(20vw, 100px), 200px);
+    }
+
     .HomePageCard1,
     .HomePageCard2 {
       position: absolute;
@@ -33,10 +37,21 @@
         padding: 15px;
         display: flex;
 
+        @include mobile {
+          padding: 10px;
+        }
+
         .HomePageCardTitleLine {
-          width: min(max(0.25vw, 16px), 4px);
-          height: min(max(12.25vw, 16px), 240px);
+          // width: min(max(0.25vw, 16px), 4px);
+          // height: min(max(12.25vw, 16px), 240px);
+          width: clamp(2px, 0.25vw, 4px);
+          height: clamp(85px, 12.25vw, 240px);
           background-color: #b1b1b1;
+
+          @include mobile {
+            width: clamp(2px, 0.25vw, 4px);
+            height: clamp(55px, 12.25vw, 240px);
+          }
         }
 
         .HomePageCardTitleText {
@@ -45,22 +60,40 @@
 
           margin-left: 20px;
 
+          @include mobile {
+            margin-left: 10px;
+          }
+
           .HomePageCardTitleHello {
             color: #b1b1b1;
             // font-size: 48px;
             // font-size: 3.4vw;
-            font-size: min(max(3.4vw, 16px), 70px);
+            // font-size: min(max(3.4vw, 16px), 70px);
+            font-size: clamp(16px, 4vw, 70px);
             font-weight: 400;
             letter-spacing: -1.44px;
+
+            @include mobile {
+              // font-size: 20px;
+              font-size: clamp(16px, 4vw, 70px);
+              letter-spacing: -0.5px;
+            }
           }
 
           .HomePageCardTitleName {
             color: #b1b1b1;
-            // font-size: 96px;
-            // font-size: 8vw;
             font-size: min(max(8vw, 16px), 160px);
             font-weight: 400;
-            letter-spacing: -4.8px;
+            letter-spacing: min(max(-4.8px, -2px), 0px);
+
+            .HomePageCardTitleNameV {
+              letter-spacing: clamp(-10px, -5px, 0px);
+            }
+
+            @include mobile {
+              font-size: clamp(30px, 8vw, 160px);
+              letter-spacing: -1.5px;
+            }
           }
         }
       }
@@ -68,14 +101,20 @@
       .HomePageCardContext {
         margin-left: 35px;
         color: #b1b1b1;
-        // font-size: 40px;
-        // font-size: 3.4vw;
-        font-size: min(max(3.4vw, 16px), 70px);
+        font-size: clamp(16px, 3.4vw, 70px);
         font-weight: 400;
-        // line-height: 60px;
-        // line-height: 5vw;
-        line-height: min(max(5vw, 16px), 100px);
+        line-height: clamp(16px, 5vw, 100px);
         letter-spacing: -1.2px;
+
+        @include mobile {
+          margin-left: 25px;
+          // margin-top: clamp(0px, 1vw, 15px);
+          margin-bottom: 5px;
+
+          font-size: clamp(12px, 3.2vw, 70px);
+          letter-spacing: -0.5px;
+          line-height: clamp(16px, 4vw, 50px);
+        }
       }
     }
 

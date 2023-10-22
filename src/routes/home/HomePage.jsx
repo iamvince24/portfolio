@@ -10,7 +10,10 @@ function Home() {
               <div className="HomePageCardTitleLine"></div>
               <div className="HomePageCardTitleText">
                 <div className="HomePageCardTitleHello">Hello! Everyone!</div>
-                <div className="HomePageCardTitleName">My Name is Vince.</div>
+                <div className="HomePageCardTitleName">
+                  My Name is <span className="HomePageCardTitleNameV">V</span>
+                  ince.
+                </div>
               </div>
             </div>
             <div className="HomePageCardContext">
@@ -24,7 +27,10 @@ function Home() {
               <div className="HomePageCardTitleLine"></div>
               <div className="HomePageCardTitleText">
                 <div className="HomePageCardTitleHello">Hello! Everyone!</div>
-                <div className="HomePageCardTitleName">My Name is Vince.</div>
+                <div className="HomePageCardTitleName">
+                  My Name is <span className="HomePageCardTitleNameV">V</span>
+                  ince.
+                </div>
               </div>
             </div>
             <div className="HomePageCardContext">

@@ -3,10 +3,11 @@
   border-radius: 15px;
   border: 1px solid black;
   margin: 10px 30px;
-
   padding: 20px;
 
   display: flex;
+
+  background-color: #b1b1b1;
 
   @include tablet {
     height: auto;

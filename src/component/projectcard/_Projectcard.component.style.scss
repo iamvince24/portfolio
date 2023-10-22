@@ -3,21 +3,15 @@
 .Project {
   display: flex;
   flex-direction: column;
-
-  // border: 1px solid red;
 }
 
 .projectCard {
-  // width: 100vw;
   color: #b1b1b1;
   margin: 30px 35px;
   display: grid;
   grid-template-columns: 7fr 3fr;
 
-  // border: 1px solid red;
-
   @include tablet {
-    // margin: 10px 25px;
     grid-template-columns: 5fr 3fr;
   }
 
@@ -28,17 +22,9 @@
   }
 
   .projectCardImg {
-    // width: clamp(0px, 67vw, 1800px);
     width: 100%;
     height: auto;
-    // aspect-ratio: 1.6 / 1;
     filter: brightness(0.75);
-
-    @include tablet {
-    }
-
-    // @include mobile {
-    // }
   }
 
   .projectCardContent {
@@ -75,8 +61,6 @@
       font-weight: 400;
       margin-bottom: 12px;
 
-      // border: 1px solid red;
-
       @include tablet {
         font-size: 1.1rem;
         margin-bottom: 10px;
@@ -104,7 +88,6 @@
     .tagContainer {
       margin-bottom: 12px;
       line-height: 24px;
-      // border: 1px solid red;
 
       @include tablet {
         margin-bottom: 0px;

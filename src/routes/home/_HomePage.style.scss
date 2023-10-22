@@ -42,8 +42,6 @@
         }
 
         .HomePageCardTitleLine {
-          // width: min(max(0.25vw, 16px), 4px);
-          // height: min(max(12.25vw, 16px), 240px);
           width: clamp(2px, 0.25vw, 4px);
           height: clamp(85px, 12.25vw, 240px);
           background-color: #b1b1b1;
@@ -66,15 +64,11 @@
 
           .HomePageCardTitleHello {
             color: #b1b1b1;
-            // font-size: 48px;
-            // font-size: 3.4vw;
-            // font-size: min(max(3.4vw, 16px), 70px);
             font-size: clamp(16px, 4vw, 70px);
             font-weight: 400;
             letter-spacing: -1.44px;
 
             @include mobile {
-              // font-size: 20px;
               font-size: clamp(16px, 4vw, 70px);
               letter-spacing: -0.5px;
             }
@@ -108,7 +102,6 @@
 
         @include mobile {
           margin-left: 25px;
-          // margin-top: clamp(0px, 1vw, 15px);
           margin-bottom: 5px;
 
           font-size: clamp(12px, 3.2vw, 70px);

@@ -23,7 +23,7 @@ function Project() {
         projectCardName={"JavaScript 20"}
         tagName={["JavaScript", "SCSS"]}
         introduction={
-          "This projects are some exercises for JavaScript Web Projects: 20 Projects to Build Your Portfolio."
+          "These projects are some exercises for JavaScript Web Projects: 20 Projects to Build Your Portfolio."
         }
         img={JavaScript20}
         Demo={"https://github.com/iamvince24/JavaScript-20"}

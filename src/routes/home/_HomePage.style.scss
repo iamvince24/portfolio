@@ -1,5 +1,11 @@
 @import "../../media";
 
+.HomePageAndFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .HomePage {
   height: 100vh;
 

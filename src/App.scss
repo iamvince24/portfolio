@@ -8,35 +8,19 @@
 //HomePage
 @import "./routes/home/HomePage.style";
 
+//Footer
+@import "./routes/home/footer/_Footer.style";
+
 //Navigation
 @import "./routes/navigation/Navigation.style";
 
 //Bar
 @import "./component/bar/Bar.component.style.scss";
+
 //ProjectCard
 @import "./component/projectcard/Projectcard.component.style";
 
 body {
   font-family: "Inter", sans-serif;
   background-color: #041810;
-}
-
-footer {
-  background-color: aquamarine;
-  color: black;
-  padding: 40px 20px;
-  display: flex;
-  justify-content: space-between;
-  height: auto;
-  margin: 10px;
-  border-radius: 15px;
-}
-
-.footerList {
-  display: flex;
-  align-content: center;
-}
-
-.footerItem {
-  padding-left: 70px;
 }

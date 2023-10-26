@@ -1,0 +1,18 @@
+@import "../../../media";
+
+.FooterSection {
+  font-size: 1rem;
+  text-align: center;
+  margin: 10px 0px 50px 0px;
+  color: #b1b1b1;
+
+  @include tablet {
+    font-size: 0.9rem;
+    margin: 10px 0px 30px 0px;
+  }
+
+  @include mobile {
+    font-size: 0.7rem;
+    margin: 10px 0px 30px 0px;
+  }
+}

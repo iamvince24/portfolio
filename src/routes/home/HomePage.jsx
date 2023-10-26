@@ -5,7 +5,7 @@ import Footer from "./footer/Footer";
 function Home() {
   return (
     <Fragment>
-      <main className="">
+      <main className="HomePageAndFooter">
         <section className="HomePage">
           <section className="HomePageVision">
             <div className="HomePageCard1">

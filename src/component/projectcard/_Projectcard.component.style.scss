@@ -9,6 +9,7 @@
   color: #b1b1b1;
   margin: 30px 35px;
   display: grid;
+  // align-content: flex-start;
   grid-template-columns: 7fr 3fr;
 
   @include tablet {
